@@ -9,6 +9,15 @@
         "https://bplace.art/*"
       ],
       "js": [
+        "bridge.js"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://bplace.art/*"
+      ],
+      "js": [
         "bplace-plus.js"
       ],
       "run_at": "document_start",
@@ -28,5 +37,15 @@
       "32": "icons/icon32.png",
       "48": "icons/icon48.png"
     }
-  }
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "sounds/*.wav"
+      ],
+      "matches": [
+        "https://bplace.art/*"
+      ]
+    }
+  ]
 }

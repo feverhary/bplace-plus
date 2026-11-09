@@ -10,7 +10,7 @@ Extension Chrome / Opera GX qui ajoute des outils à [bplace.art](https://bplace
 - **Compteurs de template** : nombre de pixels restants sur chaque couleur en mode Peindre.
 - **Favoris** : une étoile dans la fiche d'un pixel, un onglet Favoris dans les épingles et des étoiles sur la carte.
 - **Amis dans les guildes** : ajouter un membre en ami directement depuis la liste des membres.
-- **Sons** : sons pour les outils de Bplace+ et sons du jeu en attendant les sons officiels, réglables dans Paramètres → Sons.
+- **Sons** : sons pour les outils de Bplace+ et sons du jeu en attendant les sons officiels, réglables dans Paramètres → Sons. Les fichiers sont dans le dossier `sounds/` (.wav) : remplace un fichier par le tien en gardant le même nom pour changer un son.
 - 11 langues, l'extension suit la langue du compte.
 
 Chaque outil peut être activé ou désactivé dans le menu du logo bplace → **Bplace+** → **Modules**.
