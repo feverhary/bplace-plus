@@ -17,7 +17,7 @@ Chaque outil peut être activé ou désactivé dans le menu du logo bplace → *
 
 ## Installation
 
-1. Télécharge le dossier `bplace-plus` (bouton **Code → Download ZIP** sur GitHub, puis décompresse-le).
+1. Télécharge le projet depuis https://github.com/feverhary/bplace-plus (bouton **Code → Download ZIP**, puis décompresse-le).
 2. Ouvre `opera://extensions` (Opera GX) ou `chrome://extensions` (Chrome).
 3. Active le **Mode développeur**.
 4. Clique sur **Charger l'extension non empaquetée** et choisis le dossier `bplace-plus`.

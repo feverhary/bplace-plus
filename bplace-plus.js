@@ -455,7 +455,7 @@
   const VERSION = '3.1.0';
   const DISCORD_INVITE = 'https://discord.gg/p8FEMyrYMS';
   const DISCORD_CONTACT = 'harywayve';
-  const GITHUB_URL = '';
+  const GITHUB_URL = 'https://github.com/feverhary/bplace-plus';
   const LS_MODS = 'bplus:modules', LS_SEEN = 'bplus:seen';
   const MOD = { capture: true, palettes: true, goals: true, counts: true, favs: true, friends: true, gameSounds: true };
   try { Object.assign(MOD, JSON.parse(localStorage.getItem(LS_MODS) || '{}')); } catch (e) {}
