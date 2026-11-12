@@ -11,4 +11,11 @@ window.addEventListener('message', async (e) => {
   }));
   window.postMessage({ bplus: 'sounds', files }, location.origin);
 });
+// contours des pays pour le passeport
+window.addEventListener('message', async (e) => {
+  if (e.source !== window || !e.data || e.data.bplus !== 'getGeo') return;
+  let text = null;
+  try { const r = await fetch(chrome.runtime.getURL('data/countries.json')); if (r.ok) text = await r.text(); } catch (err) {}
+  window.postMessage({ bplus: 'geo', text }, location.origin);
+});
 document.documentElement.dataset.bplusBridge = '1';

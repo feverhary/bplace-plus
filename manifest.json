@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Bplace+",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "description": "Capture de zone, palettes .kpl et suivi de quête pour bplace.art",
   "content_scripts": [
     {
@@ -18,7 +18,8 @@
         "https://bplace.art/*"
       ],
       "js": [
-        "bplace-plus.js"
+        "bplace-plus.js",
+        "editor.js"
       ],
       "run_at": "document_start",
       "world": "MAIN"
@@ -41,7 +42,8 @@
   "web_accessible_resources": [
     {
       "resources": [
-        "sounds/*.wav"
+        "sounds/*.wav",
+        "data/*.json"
       ],
       "matches": [
         "https://bplace.art/*"
