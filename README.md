@@ -20,7 +20,7 @@ Extension Chrome / Opera GX qui ajoute des outils à [bplace.art](https://bplace
 - **Templates locaux illimités** : dans le panneau Templates, range un template en local pour libérer une place, puis réactive-le sur la carte quand tu veux.
 - **Passeport** : quand le succès « pays différents » est dans tes objectifs, les pays où il te reste à poser un pixel sont colorés sur la carte. bplace ne donne que le nombre de pays, alors l'extension retient les pays où tu peins et tu peux cocher ceux déjà faits dans la liste. Contours des pays : Natural Earth (domaine public).
 - **Boutique** : un bouton MAX sur les améliorations à curseur règle la quantité au maximum de tes chromas (l'achat reste à cliquer).
-- **Sons** : sons pour les outils de Bplace+ et sons du jeu en attendant les sons officiels, réglables dans Paramètres → Sons. Les fichiers sont dans le dossier `sounds/` (.wav) : remplace un fichier par le tien en gardant le même nom pour changer un son.
+- **Sons** : bplace a ses propres sons ; Bplace+ ajoute une section « Bplace+ » dans Paramètres → Sons pour ses sons à lui (capture, objectifs, favoris, éditeur, mise à jour, musique d'ambiance). En haut de la page, « Sons du jeu » choisit entre les sons de bplace et ceux de Bplace+ (les sons du site en double sont alors coupés). Le bouton du site qui coupe tous les sons coupe aussi ceux de Bplace+. Les fichiers sont dans le dossier `sounds/` (.wav) : remplace un fichier par le tien en gardant le même nom pour changer un son.
 - 11 langues, l'extension suit la langue du compte.
 
 Chaque outil peut être activé ou désactivé dans le menu du logo bplace → **Bplace+** → **Modules**.

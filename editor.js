@@ -2168,7 +2168,7 @@
         }
         growStroke(0, 0, S.w, S.h); compositeRect(0, 0, S.w, S.h);
         endStroke(); refreshThumbs(); draw();
-        A.playSound('paint');
+        A.playSound('edPaint');
       }
       function commitShape(pts, tool) {
         beginStroke();
@@ -2180,7 +2180,7 @@
           }
         } else for (let i = 0; i < pts.length; i += 2) plot(pts[i], pts[i + 1], false, 'shape');
         endStroke(); refreshThumbs();
-        A.playSound('paint');
+        A.playSound('edPaint');
       }
       function floodMask(px, py, layerData) {
         const W = S.w, H = S.h, d = layerData, i0 = (py * W + px) * 4;
@@ -2214,7 +2214,7 @@
         growStroke(minX, minY, maxX + 1, maxY + 1);
         compositeRect(minX, minY, maxX + 1, maxY + 1);
         endStroke();
-        A.playSound('paint');
+        A.playSound('edPaint');
       }
       // pipette : le dessin d'abord, puis (en mode carte) le pixel de la carte sous le curseur
       async function pick(px, py, keepTool) {
@@ -2898,7 +2898,7 @@
       function finishText(commit) {
         if (!textEd) return;
         const t = textEd; textEd = null; t.card.remove();
-        if (commit && S.floating) { const pg = histGroup; histGroup = t.g; try { commitFloating(); } finally { histGroup = pg; } refreshThumbs(); A.playSound('paint'); }
+        if (commit && S.floating) { const pg = histGroup; histGroup = t.g; try { commitFloating(); } finally { histGroup = pg; } refreshThumbs(); A.playSound('edPaint'); }
         else if (S.floating) cancelFloating();
         else { S.hist.pop(); syncHist(); draw(); }
       }
@@ -3230,7 +3230,7 @@
         if (tool === 'pencil' || tool === 'eraser') {
           if (S.floating) commitFloating();
           if (!drag.erase && !S.color) { drag = null; return; }
-          beginStroke(); ppPts = []; strokeN = 0; lastPt = null; line(p.x, p.y, p.x, p.y, drag.erase); A.playSound('paint');
+          beginStroke(); ppPts = []; strokeN = 0; lastPt = null; line(p.x, p.y, p.x, p.y, drag.erase); A.playSound('edPaint');
         } else if (tool === 'line' || tool === 'rect' || tool === 'ellipse') {
           if (S.floating) commitFloating();
           if (!S.color) { drag = null; return; }
@@ -3310,7 +3310,7 @@
                 p = toPx(e.clientX, e.clientY); hover = p;
               }
             }
-            if (p.x !== drag.last.x || p.y !== drag.last.y) { line(drag.last.x, drag.last.y, p.x, p.y, drag.erase); A.playSound('paint'); }
+            if (p.x !== drag.last.x || p.y !== drag.last.y) { line(drag.last.x, drag.last.y, p.x, p.y, drag.erase); A.playSound('edPaint'); }
           } else if (drag.tool === 'gradient') {
             drag.last = p; previewGradient(drag.start, p);
           } else if (drag.tool === 'line' || drag.tool === 'rect' || drag.tool === 'ellipse') {
